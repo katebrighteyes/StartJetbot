@@ -6,6 +6,9 @@ jetbot-043_nano-4gb-jp45.zip 파일 다운로드, 압축 해제
 
 2. 이미지 설치
 
+balena etcher 설치
+https://www.balena.io/etcher
+
 balena etcher 로 sd카드 굽고 부팅
 
 3. 로그인
