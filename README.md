@@ -4,25 +4,20 @@
 
 https://www.waveshare.com/product/robotics/jetbot-ai-kit-acce.htm
 
+https://jetsonaicar.tistory.com/21
+
 # 2. 젯봇 설치 
 
 3.1 OR 3.2 중 택 1
 
 # 3.1 젯봇 이미지 설치
 
-https://jetbot.org/master/software_setup/sd_card.html
-
-jetbot-043_nano-4gb-jp45.zip 다운로드, 압축 해제,
-
-balena etcher 로 sd카드 굽고 부팅
-
-https://www.waveshare.com/wiki/JetBot_AI_Kit
-
-sudo systemctl set-default graphical.target
-
-sudo reboot
+3_1_InstallJetBotImage.txt
 
 # 3.2 젯팩에서 설치
+
+3_2_Jetpack2Jetbot.txt
+
 
 # 4 부팅 후 기본 세팅
 
