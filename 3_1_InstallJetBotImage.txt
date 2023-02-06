@@ -1,0 +1,23 @@
+1. 이미지 다운로드
+
+https://jetbot.org/master/software_setup/sd_card.html
+
+jetbot-043_nano-4gb-jp45.zip 파일 다운로드, 압축 해제
+
+2. 이미지 설치
+
+balena etcher 로 sd카드 굽고 부팅
+
+3. 로그인
+부팅 후 터미널 화면이 나오면
+
+id : jetbot 
+pqssword : jetbot 
+
+4. GUI 전환
+
+https://www.waveshare.com/wiki/JetBot_AI_Kit 참조
+
+sudo systemctl set-default graphical.target
+
+sudo reboot
