@@ -1,0 +1,64 @@
+* 젯팩이 설치된 sd 카드로 부팅한 후 시작하는 시나리오
+
+1. Jetbot 설치
+
+터미널을 열고 아래와 같이 차례로 설치
+
+git clone http://github.com/NVIDIA-AI-IOT/jetbot.git
+
+cd jetbot
+
+./scripts/configure_jetson.sh
+
+./scripts/enable_swap.sh
+
+cd docker
+
+./enable.sh $HOME
+
+2. 최신 소프트웨어로 업그레이드
+
+ 1) 도커 컨테이너 id 확인
+ 
+ sudo docker ps -a
+ 
+ 2) 도커 컨테이너 id 터미널 시작
+
+sudo docker exec -it [도커 컨테이너 id] /bin/bash
+
+3)  _init_.py 문서 작성.
+cd /opt/jetbot/jetbot
+sudo vi __init__.py 
+
+여기 아래 한 줄을 넣고 저장한다.
+
+from .ina219 import INA219
+
+3)  ina219.py file 추가
+cd /opt/jetbot/jetbot
+wget https://www.waveshare.com/w/upload/c/ca/Jetbot-ws-script.zip
+unzip Jetbot-ws-script.zip
+sduo mv state.py apps/stats.py
+
+4) Install the software again.
+cd /opt/jetbot
+python3 setup.py install 
+exit
+
+5) 리부팅한후 아래와 같이 도커 시작
+sudo docker restart [도커 컨테이너 id] 
+
+
+3. 로그인
+부팅 후 터미널 화면이 나오면
+
+id : jetbot 
+pqssword : jetbot 
+
+4. GUI 전환
+
+https://www.waveshare.com/wiki/JetBot_AI_Kit 참조
+
+sudo systemctl set-default graphical.target
+
+sudo reboot
