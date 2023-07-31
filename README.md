@@ -1,3 +1,6 @@
+scp nvidia@172.30.153.250:/home/nvidia/Downloads/OpenCV.zip .
+
+
 # StartJetbot
 
 # 1. 젯봇 소개
