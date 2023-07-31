@@ -1,5 +1,7 @@
 scp nvidia@172.30.153.250:/home/nvidia/Downloads/OpenCV.zip .
 
+scp nvidia@172.30.153.250:/home/nvidia/Downloads/add.zip .
+
 
 # StartJetbot
 
