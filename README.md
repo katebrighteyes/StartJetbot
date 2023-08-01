@@ -2,6 +2,44 @@ scp nvidia@172.30.153.250:/home/nvidia/Downloads/OpenCV.zip .
 
 scp nvidia@172.30.153.250:/home/nvidia/Downloads/add.zip .
 
+# hibus JetbotEx
+
+cd ~/.local/lib/python3.6/site-packages/Adafruit_MotorHAT
+
+Adafruit_MotorHAT_Motors.py
+
+Adafruit_PWM_Servo_Driver.py 
+
+cd
+
+mv AILearningJetbot _AILearningJetbot
+
+git clone -b hibusJetbot --single-branch https://github.com/jetsonai/AILearningJetbot
+
+모터 동작 확인
+
+jtop
+
+스왑을 먼저해야함.
+
+To Check
+python3
+
+import torch
+
+import torchvision
+
+git clone https://github.com/JetsonHacksNano/installSwapfile
+
+cd installSwapfile
+
+./installSwapfile.sh
+
+sudo reboot
+
+리부팅 후 jtop 으로 스왑 상태 확인해주세요.
+
+----------------------
 
 # StartJetbot
 
