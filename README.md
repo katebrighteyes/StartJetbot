@@ -2,7 +2,7 @@ scp nvidia@172.30.153.250:/home/nvidia/Downloads/OpenCV.zip .
 
 scp nvidia@172.30.153.250:/home/nvidia/Downloads/add.zip .
 
-# hibus JetbotEx
+# hybus JetbotEx
 
 sudo sh -c 'echo 200 > /sys/devices/pwm-fan/target_pwm'
 
