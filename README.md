@@ -4,8 +4,7 @@ scp nvidia@172.30.153.250:/home/nvidia/Downloads/add.zip .
 
 # hibus JetbotEx
 
-cp  ~/AILearningJetbot/Basic_Install
-/Adafruit_MotorHAT/*.py ~/.local/lib/python3.6/site-packages/Adafruit_MotorHAT/
+cp  ~/AILearningJetbot/Basic_Install/Adafruit_MotorHAT/*.py ~/.local/lib/python3.6/site-packages/Adafruit_MotorHAT/
 
 Adafruit_MotorHAT_Motors.py
 
